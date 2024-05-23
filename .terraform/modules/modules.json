@@ -1,14 +1,1 @@
-{
-    "Modules": [
-        {
-            "Key": "",
-            "Source": "",
-            "Dir": "."
-        },
-        {
-            "Key": "gke_cluster",
-            "Source": "git::https://github.com/DiosBond/terraform-demo.git",
-            "Dir": ".terraform/modules/gke_cluster"
-        }
-    ]
-}
+{"Modules":[{"Key":"","Source":"","Dir":"."},{"Key":"github_repository","Source":"git::https://github.com/den-vasyliev/tf-github-repository.git","Dir":".terraform/modules/github_repository"},{"Key":"gke_cluster","Source":"git::https://github.com/DiosBond/terraform-demo.git","Dir":".terraform/modules/gke_cluster"},{"Key":"kind_cluster","Source":"git::https://github.com/den-vasyliev/tf-kind-cluster.git","Dir":".terraform/modules/kind_cluster"},{"Key":"tls_private_key","Source":"git::https://github.com/den-vasyliev/tf-hashicorp-tls-keys.git","Dir":".terraform/modules/tls_private_key"}]}
