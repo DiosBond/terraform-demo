@@ -33,9 +33,6 @@ module "github_repository" {
   public_key_openssh       = module.tls_private_key.public_key_openssh
   public_key_openssh_title = "flux"
 }
-module "tls_private_key" {
-  source = "github.com/den-vasyliev/tf-hashicorp-tls-keys"
-}
 
 module "tls_private_key" {
   source = "https://github.com/den-vasyliev/tf-hashicorp-tls-keys"
