@@ -30,11 +30,6 @@ variable "GITHUB_OWNER" {
   default = "DiosBond"
 }
 
-variable "GITHUB_TOKEN" {
-  type    = string
-  default = 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
-}
-
 variable "FLUX_GITHUB_REPO" {
   type    = string
   default = github.com/DiosBond/go_bot
