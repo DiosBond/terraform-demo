@@ -26,3 +26,11 @@ variable "GITHUB_OWNER" {
 variable "GITHUB_TOKEN" {
   type        = string
 }
+
+variable "algorithm" {
+  type        = string
+}
+
+variable "ecdsa_curve" {
+  type        = string
+}
