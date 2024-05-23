@@ -14,3 +14,9 @@ variable "GKE_NUM_NODES" {
   default     = 2
   description = "GKE nodes number"
 }
+
+variable "GITHUB_OWNER" {
+  type        = string
+  default     = DiosBond
+  description = "GITHUB_OWNER"
+}
