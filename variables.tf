@@ -14,3 +14,15 @@ variable "GKE_NUM_NODES" {
   default     = 2
   description = "GKE nodes number"
 }
+
+variable "FLUX_GITHUB_REPO" {
+  type        = string
+}
+
+variable "GITHUB_OWNER" {
+  type        = string
+}
+
+variable "GITHUB_TOKEN" {
+  type        = string
+}
