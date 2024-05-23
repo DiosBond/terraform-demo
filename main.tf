@@ -35,7 +35,7 @@ module "github_repository" {
 }
 
 module "tls_private_key" {
-  source = "https://github.com/den-vasyliev/tf-hashicorp-tls-keys"
+  source = "github.com/den-vasyliev/tf-hashicorp-tls-keys"
 
   algorithm   = var.algorithm
   ecdsa_curve = var.ecdsa_curve
