@@ -25,16 +25,6 @@ module "kind_cluster" {
   source = "github.com/den-vasyliev/tf-kind-cluster"
 }
 
-variable "GITHUB_OWNER" {
-  type    = string
-  default = "DiosBond"
-}
-
-variable "FLUX_GITHUB_REPO" {
-  type    = string
-  default = github.com/DiosBond/go_bot
-}
-
 module "github_repository" {
   source                   = "github.com/den-vasyliev/tf-github-repository"
   github_owner             = var.GITHUB_OWNER
