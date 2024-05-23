@@ -11,3 +11,7 @@ You can use the -var option multiple times in a single command to set several di
 
 
 terraform apply -var="FLUX_GITHUB_REPO=github.com/DiosBond/go_bot" -var="GITHUB_OWNER=DiosBond" -var="GITHUB_TOKEN=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"
+
+input terraform request varaibles
+    algorithm - ECDSA
+    ecdsa_curve - P256
