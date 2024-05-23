@@ -25,6 +25,11 @@ module "kind_cluster" {
   source = "github.com/den-vasyliev/tf-kind-cluster"
 }
 
+variable "GITHUB_OWNER" {
+  type    = string
+  default = "your_github_owner"
+}
+
 module "github_repository" {
   source                   = "github.com/den-vasyliev/tf-github-repository"
   github_owner             = var.GITHUB_OWNER
