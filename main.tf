@@ -1,8 +1,6 @@
-module "gke_cluster" {
-  source         = "github.com/DiosBond/terraform-demo"
-  GOOGLE_REGION  = var.GOOGLE_REGION
-  GOOGLE_PROJECT = var.GOOGLE_PROJECT
-  GKE_NUM_NODES  = 2
+
+module "kind_cluster" {
+  source = "github.com/den-vasyliev/tf-kind-cluster"
 }
 module "flux_bootstrap" {
   source            = "./modules/fluxcd-flux-bootstrap"
@@ -12,7 +10,7 @@ module "flux_bootstrap" {
   github_token      = var.GITHUB_TOKEN
 }
 module "github_repository" {
-  source                   = "github.com/DiosBond/new-github-repository"
+  source                   = "github.com/DiosBond/terraform-demo"
   github_owner             = var.GITHUB_OWNER
   github_token             = var.GITHUB_TOKEN
   repository_name          = var.FLUX_GITHUB_REPO
