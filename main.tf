@@ -3,6 +3,12 @@ provider "kind" {
   kubeconfig = pathexpand("${path.module}/kind-config")
 }
 
+provider "flux" {
+  kubernetes = {
+    config_path = "~/.kube/config"
+  }
+}
+
 resource "kind_cluster" "this" {
   name = "kind-cluster"
   config = <<-EOF
